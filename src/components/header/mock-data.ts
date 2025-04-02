@@ -8,22 +8,22 @@ const MenuItems: MenuItemsProps[] = [
   {
     id: 'desktop-item',
     name: 'Desktop',
-    url: '#'
+    url: '/cpu-desktop'
   },
   {
     id: 'notebook-item',
     name: 'Notebook',
-    url: '#'
+    url: '/cpu-notebook'
   },
   {
     id: 'netbook-item',
     name: 'Netbook',
-    url: '#'
+    url: '/cpu-netbook'
   },
   {
     id: 'servidores-item',
     name: 'Servidores',
-    url: '#'
+    url: '/cpu-server'
   }
 ]
 
