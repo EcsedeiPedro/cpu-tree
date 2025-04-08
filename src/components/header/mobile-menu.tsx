@@ -25,7 +25,7 @@ export const MobileMenu = () => {
   return (
     <div className="relative z-30">
       <Sheet>
-        <SheetTrigger onClick={() => handleMobileMenu()}>
+        <SheetTrigger className="flex items-center" onClick={() => handleMobileMenu()}>
           <Menu color="white" />
         </SheetTrigger>
 

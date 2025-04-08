@@ -125,4 +125,9 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  @apply px-4;
+}
+
+.section-page {
+  margin-top: 64px;
 }
