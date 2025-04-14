@@ -1,3 +1,5 @@
+import { students } from "./mock-data";
+
 export const Home = () => {
   return (
     <section className="h-[calc(100vh-64px)] mt-16 bg-[#181513]">
@@ -19,10 +21,11 @@ export const Home = () => {
             </h2>
 
             <ul className="text-lg flex flex-col gap-3">
-              <li>Pedro Enrique Ecsedei Martins</li>
-              <li>Jennifer Narrany</li>
-              <li>Luiz Adrian</li>
-              <li>Felipe Sales</li>
+              {students.map((student, index) => (
+                <li key={index}>
+                  {student.name}
+                </li>
+              ))}
             </ul>
           </article>
         </div>
