@@ -30,7 +30,11 @@ type CarouselGenericProps = {
 export const CoreCarousel = ({ items }: CarouselGenericProps) => {
   return (
     <Carousel className="w-full h-[500px] relative">
-      <CarouselContent className={`h-[500px] w-full flex items-center ${items.length === 1 ? "justify-center" : ""}`}>
+      <CarouselContent
+        className={`h-[500px] w-full flex items-center ${
+          items.length === 1 ? "justify-center" : ""
+        }`}
+      >
         {items
           ? items.map((item, index) => (
               <CarouselItem
@@ -64,7 +68,7 @@ export const CoreCarousel = ({ items }: CarouselGenericProps) => {
 
                       <DialogContent className="lg:min-w-[768px] p-0 border-0 gap-0 rounded-none overflow-hidden shadow-md w-full">
                         <DialogHeader
-                          className="relative z-10 py-16 px-5 bg-cover bg-center"
+                          className="relative z-10 py-16 px-10 bg-cover bg-center"
                           style={{
                             backgroundImage: item.image
                               ? `url(${item.image})`
@@ -85,7 +89,7 @@ export const CoreCarousel = ({ items }: CarouselGenericProps) => {
                           </div>
                         </DialogHeader>
 
-                        <div className="bg-white p-5 gap-5 h-full max-h-[500px] overflow-y-auto">
+                        <div className="bg-white p-10 gap-5 h-full max-h-[500px] overflow-y-auto">
                           {item.content}
                         </div>
                       </DialogContent>
@@ -99,7 +103,7 @@ export const CoreCarousel = ({ items }: CarouselGenericProps) => {
 
       {items.length > 1 ? (
         <>
-          <CarouselPrevious >
+          <CarouselPrevious>
             <span className="text-black">Previous</span>
           </CarouselPrevious>
 

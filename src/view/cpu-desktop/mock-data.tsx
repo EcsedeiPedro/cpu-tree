@@ -3,9 +3,9 @@ import { CarouselItemData } from "../../components/core-carousel";
 const desktopCpuContent: CarouselItemData[] = [
   {
     title: "De 4 para 16 bits: O Nascimento dos Microprocessadores (1970-1979)",
-    image: '/images/1970-1979.png',
+    image: "/images/desktop/1970-desk.png",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore alias autem accusamus! Quia nisi alias earum sapiente! Mollitia, praesentium odit!",
+      "A era dos microprocessadores começa, marcando a transição de arquiteturas simples de 4 e 8 bits para os revolucionários 16 bits que moldariam o futuro da computação pessoal.",
     content: (
       <div className="flex flex-col gap-8">
         <ul className="flex flex-col gap-4">
@@ -111,8 +111,9 @@ const desktopCpuContent: CarouselItemData[] = [
   },
   {
     title: "Ascensão dos 32 bits: A Consolidação dos PCs (1980-1999)",
+    image: "/images/desktop/1980-desk.png",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore alias autem accusamus! Quia nisi alias earum sapiente! Mollitia, praesentium odit!",
+      "Com os 32 bits, os computadores pessoais se tornam mais poderosos e populares, com inovações como o Pentium e o surgimento de concorrentes à altura da Intel.",
     content: (
       <div className="flex flex-col gap-8">
         <ul className="flex flex-col gap-4">
@@ -181,9 +182,11 @@ const desktopCpuContent: CarouselItemData[] = [
     ),
   },
   {
-    title: "Multicore e Eficiência: A Transição Tecnológica do Século XXI (2000-2008)",
+    title:
+      "Multicore e Eficiência: A Transição Tecnológica do Século XXI (2000-2008)",
+    image: "/images/desktop/2000-desk.png",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore alias autem accusamus! Quia nisi alias earum sapiente! Mollitia, praesentium odit!",
+      "O foco muda para múltiplos núcleos e eficiência energética, abrindo caminho para processadores mais equilibrados e potentes.",
     content: (
       <div className="flex flex-col gap-8">
         <ul className="flex flex-col gap-4">
@@ -237,9 +240,11 @@ const desktopCpuContent: CarouselItemData[] = [
     ),
   },
   {
-    title: "Potência e Paralelismo: A Era dos 64 bits se Estabelece (2010-2019)",
+    title:
+      "Potência e Paralelismo: A Era dos 64 bits se Estabelece (2010-2019)",
+    image: "/images/desktop/2010-desk.png",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore alias autem accusamus! Quia nisi alias earum sapiente! Mollitia, praesentium odit!",
+      "Os 64 bits dominam o mercado, trazendo desempenho massivo, paralelismo avançado e uma nova era para desktops com Intel Core i9 e AMD Ryzen.",
     content: (
       <div className="flex flex-col gap-8">
         <ul className="flex flex-col gap-4">
@@ -287,9 +292,11 @@ const desktopCpuContent: CarouselItemData[] = [
     ),
   },
   {
-    title: "Híbridos, Chiplets e IA: A Nova Geração dos Processadores (2020-2023)",
+    title:
+      "Híbridos, Chiplets e IA: A Nova Geração dos Processadores (2020-2023)",
+    image: "/images/desktop/2020-desk.png",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore alias autem accusamus! Quia nisi alias earum sapiente! Mollitia, praesentium odit!",
+      "Entre 2020 e 2023, o mercado de processadores foi revolucionado pela adoção de arquiteturas híbridas, chiplets e recursos de inteligência artificial. Intel e AMD disputam liderança com inovações em performance, eficiência energética e novos padrões como DDR5 e PCIe 5.0.",
     content: (
       <div className="flex flex-col gap-8">
         <ul className="flex flex-col gap-4">
