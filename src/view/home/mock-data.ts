@@ -30,4 +30,7 @@ export const students: StudentsProps[] = [
   {
     name: 'Bruno Santa Maria',
   },
+  {
+    name: 'Loiane Silva',
+  },
 ]
