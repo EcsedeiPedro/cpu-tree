@@ -30,7 +30,7 @@ type CarouselGenericProps = {
 export const CoreCarousel = ({ items }: CarouselGenericProps) => {
   return (
     <Carousel className="w-full h-[500px] relative">
-      <CarouselContent className="h-[500px] w-full flex items-center">
+      <CarouselContent className={`h-[500px] w-full flex items-center ${items.length === 1 ? "justify-center" : ""}`}>
         {items
           ? items.map((item, index) => (
               <CarouselItem
@@ -85,7 +85,7 @@ export const CoreCarousel = ({ items }: CarouselGenericProps) => {
                           </div>
                         </DialogHeader>
 
-                        <div className="bg-white p-5 gap-5 h-[500px] overflow-y-auto">
+                        <div className="bg-white p-5 gap-5 h-full max-h-[500px] overflow-y-auto">
                           {item.content}
                         </div>
                       </DialogContent>
@@ -97,9 +97,17 @@ export const CoreCarousel = ({ items }: CarouselGenericProps) => {
           : null}
       </CarouselContent>
 
-      <CarouselPrevious className="cursor-pointer" />
+      {items.length > 1 ? (
+        <>
+          <CarouselPrevious >
+            <span className="text-black">Previous</span>
+          </CarouselPrevious>
 
-      <CarouselNext className="cursor-pointer" />
+          <CarouselNext>
+            <span className="text-black">Next</span>
+          </CarouselNext>
+        </>
+      ) : null}
     </Carousel>
   );
 };
