@@ -1,15 +1,12 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { DialogTitle } from "@radix-ui/react-dialog";
 import { Menu } from "lucide-react";
 import { useState } from "react";
 import { MenuItems } from "./mock-data";
@@ -25,24 +22,34 @@ export const MobileMenu = () => {
   return (
     <div className="relative z-30">
       <Sheet>
-        <SheetTrigger className="flex items-center" onClick={() => handleMobileMenu()}>
+        <SheetTrigger
+          className="flex items-center"
+          onClick={() => handleMobileMenu()}
+        >
           <Menu color="white" />
         </SheetTrigger>
 
         <SheetContent>
           <SheetHeader>
-            <DialogTitle />
-            <SheetDescription className="px-5 mt-10">
+            <SheetTitle className="px-5 text-2xl font-bold text-black">
+              Menu
+            </SheetTitle>
+
+            <div className="px-5 mt-10">
               <ul className="flex flex-col gap-10">
-                {MenuItems.map((item) => (
-                  <li key={item.id}>
-                    <Link className="text-xl font-medium text-black" href={item.url}>
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
+                {isMobileMenuOpen &&
+                  MenuItems.map((item) => (
+                    <li key={item.id}>
+                      <Link
+                        className="text-xl font-medium text-black"
+                        href={item.url}
+                      >
+                        {item.name}
+                      </Link>
+                    </li>
+                  ))}
               </ul>
-            </SheetDescription>
+            </div>
           </SheetHeader>
         </SheetContent>
       </Sheet>
