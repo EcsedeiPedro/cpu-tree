@@ -5,7 +5,7 @@ import { MobileMenu } from "./mobile-menu";
 
 export const Header = () => {
   return (
-    <header className="fixed top-0 w-full z-50 shadow-lg">
+    <header className="fixed top-0 w-full z-50 shadow-lg bg-stone-800">
       <div className="container">
         <nav className="w-full flex items-center justify-between lg:justify-start py-5">
           <Link href="/">
