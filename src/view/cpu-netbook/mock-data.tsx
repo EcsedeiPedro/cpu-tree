@@ -2,8 +2,8 @@ import { CarouselItemData } from "../../components/core-carousel";
 
 const netbookCpuContent: CarouselItemData[] = [
   {
-    title: "A Era dos Netbooks: Portabilidade com Baixo Consumo (2007–2012)",
-    image: "/images/netbook-cpus.png",
+    title: "A Era dos Netbooks: Portabilidade com Baixo Consumo (2007-2012)",
+    image: "/images/netbook/2007-net.png",
     description:
       "Entre 2007 e 2012, os netbooks revolucionaram a computação portátil com foco em baixo consumo e custo acessível. Alimentados principalmente por processadores Intel Atom e AMD de baixo TDP, esses dispositivos dominaram o mercado educacional e corporativo básico antes de cederem espaço a tablets e ultrabooks.",
     content: (

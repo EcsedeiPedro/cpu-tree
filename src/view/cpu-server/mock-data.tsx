@@ -3,6 +3,7 @@ import { CarouselItemData } from "@/src/components/core-carousel";
 const serverCpuContent: CarouselItemData[] = [
   {
     title: "Os Titãs do Silício: O Início dos Servidores (1960-1970)",
+    image: "/images/server/1960-server.png",
     description:
       "Décadas marcadas pelo surgimento e consolidação dos mainframes, com destaque para a IBM. Começo da virtualização e da memória virtual.",
     content: (
@@ -23,6 +24,7 @@ const serverCpuContent: CarouselItemData[] = [
   },
   {
     title: "Do RISC ao Xeon: A Revolução nos Data Centers (1980-1990)",
+    image: "/images/server/1980-server.png",
     description:
       "Avanço das arquiteturas RISC, servidores Unix e início da linha Xeon. A arquitetura x86 começa a ganhar força em ambientes corporativos.",
     content: (
@@ -78,6 +80,7 @@ const serverCpuContent: CarouselItemData[] = [
   },
   {
     title: "Virtualização, Multicore e o X86-64 em Ação (2000-2010)",
+    image: "/images/server/2000-server.png",
     description:
       "Surgimento do x86-64, virtualização em larga escala e popularização de múltiplos núcleos. ARM começa a aparecer no cenário.",
     content: (
@@ -134,6 +137,7 @@ const serverCpuContent: CarouselItemData[] = [
   },
   {
     title: "Nuvem, ARM e o Futuro dos Servidores (2020-Presente)",
+    image: "/images/server/2020-server.png",
     description:
       "Explosão de servidores ARM, foco em sustentabilidade e altíssimo número de núcleos. A nuvem domina o cenário.",
     content: (

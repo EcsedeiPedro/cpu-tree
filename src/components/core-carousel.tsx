@@ -59,7 +59,7 @@ export const CoreCarousel = ({ items }: CarouselGenericProps) => {
                   </div>
 
                   <div className="bg-white p-5 flex items-center gap-5">
-                    <p className="text-black/70 text-sm">{item.description}</p>
+                    <p className="text-black/70 text-sm">{item.description.length > 99 ? `${item.description.slice(0, 99)}...` : item.description}</p>
 
                     <Dialog>
                       <DialogTrigger asChild>

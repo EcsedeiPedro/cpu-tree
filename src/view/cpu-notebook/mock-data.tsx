@@ -3,7 +3,7 @@ import { CarouselItemData } from "../../components/core-carousel";
 export const notebookCpuContent: CarouselItemData[] = [
   {
     title: "Os Primeiros Passos da Mobilidade (1990-1999)",
-    image: "/images/notebook-1990s.png",
+    image: "/images/notebook/1990-note.png",
     description:
       "Os notebooks começaram a ganhar espaço no mercado com processadores adaptados de desktops, com foco em eficiência energética e tamanho reduzido.",
     content: (
@@ -32,7 +32,7 @@ export const notebookCpuContent: CarouselItemData[] = [
   },
   {
     title: "Consolidação dos Notebooks (2000-2009)",
-    image: "/images/notebook-2000s.png",
+    image: "/images/notebook/2000-note.png",
     description:
       "A década marcou a popularização dos notebooks e o surgimento de arquiteturas dedicadas exclusivamente à mobilidade.",
     content: (
@@ -62,7 +62,7 @@ export const notebookCpuContent: CarouselItemData[] = [
   },
   {
     title: "Eficiência, Desempenho e o Surgimento do ARM (2010-2019)",
-    image: "/images/notebook-2010s.png",
+    image: "/images/notebook/2010-note.png",
     description:
       "Com a chegada dos ultrabooks e a evolução dos processadores móveis, a década foi marcada pela eficiência e surgimento da concorrência ARM.",
     content: (
@@ -103,7 +103,7 @@ export const notebookCpuContent: CarouselItemData[] = [
   },
   {
     title: "Alta Performance e Chips Proprietários (2020-atualidade)",
-    image: "/images/notebook-2020s.png",
+    image: "/images/notebook/2020-note.png",
     description:
       "A performance dos notebooks atingiu novos patamares com chips de múltiplos núcleos, arquitetura híbrida e maior eficiência energética.",
     content: (
