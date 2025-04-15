@@ -6,25 +6,30 @@ interface MenuItemsProps {
 
 const MenuItems: MenuItemsProps[] = [
   {
-    id: 'desktop-item',
-    name: 'Desktop',
-    url: '/cpu-desktop'
+    id: "desktop-item",
+    name: "Desktop",
+    url: "/cpu-desktop",
   },
   {
-    id: 'notebook-item',
-    name: 'Notebook',
-    url: '/cpu-notebook'
+    id: "notebook-item",
+    name: "Notebook",
+    url: "/cpu-notebook",
   },
   {
-    id: 'netbook-item',
-    name: 'Netbook',
-    url: '/cpu-netbook'
+    id: "netbook-item",
+    name: "Netbook",
+    url: "/cpu-netbook",
   },
   {
-    id: 'servidores-item',
-    name: 'Servidores',
-    url: '/cpu-server'
-  }
-]
+    id: "servidores-item",
+    name: "Servidores",
+    url: "/cpu-server",
+  },
+  {
+    id: "gallery-item",
+    name: "Galeria",
+    url: "/gallery",
+  },
+];
 
-export { MenuItems,  }
+export { MenuItems };

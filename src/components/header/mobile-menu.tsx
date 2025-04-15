@@ -31,25 +31,27 @@ export const MobileMenu = () => {
 
         <SheetContent>
           <SheetHeader>
-            <SheetTitle className="px-5 text-2xl font-bold text-black">
-              Menu
-            </SheetTitle>
+            <div className="mt-12">
+              <SheetTitle className="px-5 text-2xl font-bold text-black">
+                Menu
+              </SheetTitle>
 
-            <div className="px-5 mt-10">
-              <ul className="flex flex-col gap-10">
-                {isMobileMenuOpen &&
-                  MenuItems.map((item) => (
-                    <li key={item.id}>
-                      <Link
-                        className="text-xl font-medium text-black"
-                        href={item.url}
-                      >
-                        {item.name}
-                      </Link>
-                    </li>
-                  ))}
-              </ul>
-            </div>
+              <div className="px-5 mt-10">
+                <ul className="flex flex-col gap-10">
+                  {isMobileMenuOpen &&
+                    MenuItems.map((item) => (
+                      <li key={item.id}>
+                        <Link
+                          className="text-xl font-medium text-black"
+                          href={item.url}
+                        >
+                          {item.name}
+                        </Link>
+                      </li>
+                    ))}
+                </ul>
+              </div>
+              </div>
           </SheetHeader>
         </SheetContent>
       </Sheet>
