@@ -16,19 +16,13 @@ export const students: StudentsProps[] = [
     name: 'Jennifer Naranny',
   },
   {
-    name: 'Kauan',
-  },
-  {
-    name: 'Igor',
+    name: 'Kauã Henrique',
   },
   {
     name: 'Victor Nascimento',
   },
   {
     name: 'Gabriel Barbosa',
-  },
-  {
-    name: 'Bruno Santa Maria',
   },
   {
     name: 'Loiane Silva',
