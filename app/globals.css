@@ -135,3 +135,22 @@
 .section-page {
   margin-top: 64px;
 }
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: rgba(152, 16, 250, 1);
+  border-radius: 6px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.scrollbar-custom:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(152, 16, 250, 0.4);
+}

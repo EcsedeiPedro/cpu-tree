@@ -29,10 +29,10 @@ export const MobileMenu = () => {
           <Menu color="white" />
         </SheetTrigger>
 
-        <SheetContent>
+        <SheetContent className="bg-stone-950 border-0">
           <SheetHeader>
             <div className="mt-12">
-              <SheetTitle className="px-5 text-2xl font-bold text-black">
+              <SheetTitle className="px-5 text-2xl font-bold bg-gradient-to-r from-purple-600 to-white bg-clip-text text-transparent">
                 Menu
               </SheetTitle>
 
@@ -42,7 +42,7 @@ export const MobileMenu = () => {
                     MenuItems.map((item) => (
                       <li key={item.id}>
                         <Link
-                          className="text-xl font-medium text-black"
+                          className="text-xl font-medium text-white"
                           href={item.url}
                         >
                           {item.name}

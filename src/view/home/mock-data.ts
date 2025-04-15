@@ -22,7 +22,7 @@ export const students: StudentsProps[] = [
     name: 'Igor',
   },
   {
-    name: 'Victor',
+    name: 'Victor Nascimento',
   },
   {
     name: 'Gabriel Barbosa',

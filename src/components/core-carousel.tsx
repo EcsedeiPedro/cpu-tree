@@ -30,12 +30,12 @@ type CarouselGenericProps = {
 export const CoreCarousel = ({ items }: CarouselGenericProps) => {
   return (
     <Carousel className="w-full h-[500px] relative">
-      <CarouselContent className="h-[500px] w-full flex items-center">
+      <CarouselContent className={`h-[500px] w-full flex items-center  ${items.length === 1 ? "justify-center" : ""}`}>
         {items
           ? items.map((item, index) => (
               <CarouselItem
                 key={index}
-                className="basis-full md:basis-1/2 lg:basis-1/3 flex items-center justify-center gap-10 rounded-lg max-h-[284px]"
+                className="w-full basis-full md:basis-1/2 lg:basis-1/3 flex items-center justify-center gap-10 rounded-lg max-h-[284px]"
               >
                 <div className=" rounded-md overflow-hidden shadow-md w-full h-full">
                   <div
@@ -89,7 +89,7 @@ export const CoreCarousel = ({ items }: CarouselGenericProps) => {
                           </div>
                         </DialogHeader>
 
-                        <div className="bg-white p-6 gap-5 h-full max-h-[300px] md:max-h-[500px] overflow-y-auto">
+                        <div className="bg-white p-6 gap-5 h-full max-h-[300px] md:max-h-[500px] overflow-y-auto scrollbar-custom">
                           {item.content}
                         </div>
                       </DialogContent>
